@@ -87,11 +87,18 @@ int main(int argc, char *argv[])
 {
     // take stdin input for number of elements in the data set
     int dataset_count = 0;
-    std::cout << "Enter the size of data set in 'input.txt'" << std::endl;
+    std::cout << "Enter the size of data set in 'input.txt(upto 100)'" << std::endl;
     std::cin >> dataset_count;
+
+    // input sanitation
     if (dataset_count > MAX_DATA_SET)
     {
-        std::cout << "The data set cannot be greater than 100" << std::endl;
+        std::cout << "The size of the data set cannot be greater than 100" << std::endl;
+        return 1;
+    }
+    if (dataset_count <= 1)
+    {
+        std::cout << "The size of the data set cannot be less than or equal to 1" << std::endl;
         return 1;
     }
 
