@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "bit": "cpp",
+        "limits": "cpp",
+        "numbers": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "*.inc": "cpp"
+    }
+}
